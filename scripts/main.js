@@ -207,10 +207,15 @@ function handleBubbles() {
 
 //animation loop
 
+const layer1 = new Image();
+layer1.src = '/assets/images/background-layer-1.png'
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = 'green';
-    ctx.rect(0, 0, canvas.width, canvas.height);
+    
+    
+    ctx.drawImage(layer1, 0, 0);
+
     ctx.fill();
     ctx.stroke();
 
